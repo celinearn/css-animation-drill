@@ -1,0 +1,59 @@
+#stage {
+	width: 38rem;
+	height: 38rem;
+	margin-left: 28%;
+	margin-top: 5%;
+	position: relative;
+}
+
+#hero {
+	width: 75px;
+	height: 75px;
+	border: 1px dashed red;
+	position: absolute;
+	left: 20px;
+	top: 20px;
+	box-sizing: border-box;
+	animation: anim1 5s linear forwards, anim2 2s 5s linear forwards, anim3 0.5s 7s linear forwards, anim4 2.5s 9.5s linear forwards, anim5 5s 14.5s linear forwards;
+}
+
+@keyframes anim1 {
+
+	to {left: 500px;}
+}
+
+@keyframes anim2 {
+	to {top: 200px;}
+}
+
+@keyframes anim3 {
+
+	to {	
+	transform: translate(-230px) rotate(45deg);}	
+}
+
+@keyframes anim4 {
+
+	from {
+		transform: translate(-230px) rotate(45deg);}
+
+	to 		{
+		transform: translate(-480px, 3px) rotate(90deg);
+		border: 1px dashed blue}
+}
+
+@keyframes anim5 {
+	from {
+		transform: translate(-480px, 3px) rotate(90deg);
+		border: 1px dashed blue
+	}
+
+	to { left: 920px;
+		top:440px;
+		width: 150px;
+		height: 150px;
+		border-radius:75%;
+		background: radial-gradient(#FBDA61, #F76B1C);
+		border: none;
+		}
+}
